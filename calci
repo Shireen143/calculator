@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class Calci{
+  public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    int Num1;
+    int Num2;
+    int c;
+
+    System.out.println("enter a number");
+    Num1 = Integer.parseInt(input.nextLine());
+
+    System.out.println("enter another number");
+    Num2 = Integer.parseInt(input.nextLine());
+    System.out.println("enter operation");
+    c=Integer.parseInt(input.nextLine());
+    switch(c) {
+    case 1: Addition(Num1, Num2);
+            break;
+    case 2:Substratcion(Num1, Num2);
+            break;
+    case 3: Multiplication(Num1, Num2);
+            break;
+    case 4: division(Num1, Num2);
+            break;
+    }
+  }
+  static void Addition( int Num1, int Num2 )
+    {
+        System.out.println("Addition = " + (Num1 + Num2));
+    }
+  static void Substratcion( int Num1, int Num2 ) 
+    {
+        System.out.println("Substratcion = " + (Num1 - Num2));
+    }
+   static void Multiplication( int Num1, int Num2 )
+    {
+        System.out.println("Multiplication = " + (Num1 * Num2));
+    }
+    static void division( int Num1, int Num2) 
+    {
+        System.out.println("Division= "+(Num1 / Num2));
+    }
+}
